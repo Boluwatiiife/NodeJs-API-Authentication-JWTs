@@ -1,0 +1,41 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzEzNTQ3MTYsImV4cCI6MTczMTM1NDc1NiwiYXVkIjoiNjczMWQyMDNkNDlkNjczMmIwZmQ5N2VlIiwiaXNzIjoieW91dHViZS5jb20ifQ.9w3tWWF-mtGOXgURF5Tvjx05-NrG-53p-vSZnUPJlxw
+
+### Login Route
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "novwmmm@gmail.com",
+    "password": "1234"
+}
+
+### Register Route
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "mikee@gmail.com",
+    "password": "1234"
+}
+
+### Refresh-Token Route
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzEzNTQ3MTYsImV4cCI6MTc2MjkxMjMxNiwiYXVkIjoiNjczMWQyMDNkNDlkNjczMmIwZmQ5N2VlIiwiaXNzIjoieW91dHViZS5jb20ifQ.mZgSqvVunAMQFxB8EMOVgU1otCCrFWoLlP7uBucvPq0"
+}
+
+
+### testingggggggg
+POST http://localhost:3000/auth/test-body
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzEzNTI3NjIsImV4cCI6MTc2MjkxMDM2MiwiYXVkIjoiNjczMWQyMDNkNDlkNjczMmIwZmQ5N2VlIiwiaXNzIjoieW91dHViZS5jb20ifQ.HHLgxg2MmQfVzDorhBkcjzemr3UOJkhGMsIZ4w8iwq4"
+}
+
+
+### Logout Route
+DELETE http://localhost:3000/auth/logout
